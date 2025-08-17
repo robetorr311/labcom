@@ -1,0 +1,50 @@
+    body {
+      margin: 0;
+      background: url('../imagenes/labcom.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
+      color: #fff;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 999;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    .login-screen {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(6px);
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .login-screen img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .form-card, .card {
+      background-color: rgba(0, 0, 0, 0.75) !important;
+      color: #fff;
+    }
+
+    .table-responsive {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    #dashboard {
+      margin-top: 120px;
+    }
