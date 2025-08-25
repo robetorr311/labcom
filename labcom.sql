@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 17, 2025 at 08:22 PM
+-- Generation Time: Aug 25, 2025 at 03:59 PM
 -- Server version: 10.11.4-MariaDB-1~deb12u1
 -- PHP Version: 8.2.13
 
@@ -29,10 +29,18 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `articulo` (
   `id` int(11) NOT NULL,
+  `nombre` text NOT NULL,
   `id_tipoarticulo` int(11) NOT NULL,
   `id_marca` int(11) NOT NULL,
-  `modelo` int(11) NOT NULL
+  `modelo` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `articulo`
+--
+
+INSERT INTO `articulo` (`id`, `nombre`, `id_tipoarticulo`, `id_marca`, `modelo`) VALUES
+(1, 'Prueba', 6, 2, 'prueba');
 
 -- --------------------------------------------------------
 
@@ -375,7 +383,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `articulo`
 --
 ALTER TABLE `articulo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `auditoria`

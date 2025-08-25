@@ -35,11 +35,19 @@
 <?php if($_SESSION['logat'] == 1):
         if($_SESSION['user']['id_tipo'] == 1): ?>
           <li><a class="nav-link">Bienvenido, <strong><?php echo $_SESSION['user']['nombre']; ?></strong></a></li>
-          <a class="nav-link hover-underline-animation" aria-current="page" href="pat_entry_page.php"  id=""> Dashboard </a>
+          <a class="nav-link hover-underline-animation" aria-current="page" href="articulos.php"  id=""> Articulos </a>
+          <a class="nav-link hover-underline-animation" aria-current="page" href="tipo_articulo.php"  id=""> Tipo de Articulo </a> 
+          <a class="nav-link hover-underline-animation" aria-current="page" href="equipos.php"  id=""> Equipos </a>          
+          <a class="nav-link hover-underline-animation" aria-current="page" href="marcas.php"  id=""> Marcas </a>          
+          <a class="nav-link hover-underline-animation" aria-current="page" href="usuarios.php"  id=""> Usuarios </a>          
+          <a class="nav-link hover-underline-animation" aria-current="page" href="ingreso.php"  id=""> Ingreso </a>          
+          <a class="nav-link hover-underline-animation" aria-current="page" href="salida.php"  id=""> Salida </a>          
           <li><a class="nav-link hover-underline-animation" href="log_out.php">Log out</a></li>
 <?php   elseif($_SESSION['user']['id_tipo'] == 2): ?>
+          <li><a class="nav-link">Bienvenido, <strong><?php echo $_SESSION['user']['nombre']; ?></strong></a></li>
           <li><a class="nav-link hover-underline-animation" href="log_out.php">Log Out</a></li>
 <?php   elseif($_SESSION['user']['id_tipo'] == 3): ?>
+          <li><a class="nav-link">Bienvenido, <strong><?php echo $_SESSION['user']['nombre']; ?></strong></a></li>  
           <li><a class="nav-link hover-underline-animation" href="log_out.php">Log Out</a></li>
 <?php   endif; ?>
 <?php else: ?>

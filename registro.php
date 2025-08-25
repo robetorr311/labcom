@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
    <div class="container">
-      <div class="row">
+      <div class="row dashboard">
          <div class="col">
             <form id="register" name="register" accept-charset="UTF-8">
                <div class="row justify-content-center">
